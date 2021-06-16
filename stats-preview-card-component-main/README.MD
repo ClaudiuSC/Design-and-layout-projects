@@ -1,3 +1,8 @@
+==============================================================================================================
+FrontEnd-Mentor. 
+This is a project made using the design from https://www.frontendmentor.io. This is a website that challenges you to build websites that sharpen your development skills.
+==============================================================================================================
+
 Responsive preview card.
 
 Mobile first.
