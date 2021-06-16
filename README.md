@@ -1,2 +1,2 @@
-# FrontEnd-Mentor
-These are projects using the designs from https://www.frontendmentor.io. This is a website that challenges you to build websites that sharpen your development skills.
+# Website Design Challenges
+These are projects using the designs from different sources on the internet, like www.frontendmentor.io, www.kevinpowell.co or other sources that i found interesting.
