@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* global formating */
+.container {
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 6em 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+
+/* typography */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 4rem;
+    /* typography with one exception :D*/
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    /* typography with one exception :D*/
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+
+
+
+/* header styling */
+.header {
+    display: flex;
+    min-height: 660px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10rem;
+    background-color: #F3EED9;
+}
+
+/* headers styling */
+.h--brown {
+    color: #824936;
+}
+
+.h--cream {
+    color: #F3EED9;
+}
+
+/* first section */
+.sub_section {
+    display: flex;
+}
+
+.header__center {
+    text-align: center;
+}
+
+
+/* look alike sections */
+.section__component {
+width: 48%;
+}
+
+.p--white {
+    color: #FFF;
+}
+
+.section--black {
+    background-color: #222C2A;
+}
+
+.section--brown {
+    background-color: #824936;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .section__component {
+        width: 96%;
+    }
+}
