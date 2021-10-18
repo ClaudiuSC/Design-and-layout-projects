@@ -12,13 +12,13 @@ body {
   margin: 0;
 }
 
+/* main section */
+
 .container {
   max-width: 960px;
   display: flex;
   border: 1px solid #989898;
 }
-
-/* main section */
 
 .bbq-main {
   position: relative;
@@ -32,7 +32,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(2.5px);
+  filter: blur(2px);
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@ body {
 }
 
 .filter {
-  background-color: rgba(37, 37, 37, 0.7);
+  background-color: rgba(34, 34, 34, 0.7);
   height: 100%;
   width: 100%;
   padding: 0 1rem;
@@ -107,8 +107,12 @@ body {
   cursor: pointer;
 }
 
-.register-form button:hover,
+.register-form button:hover {
+  opacity: 0.9;
+}
+
 .register-form button:focus {
+  transform: scale(0.99);
   opacity: 0.9;
 }
 
@@ -180,6 +184,53 @@ body {
 
 .form-info {
   font-size: 0.625rem;
-  padding: 0 5rem;
+  padding: 0 2rem;
   color: #989898;
+}
+
+/* @media (max-width: 800px) {
+  .form-info {
+    padding: 0 1.5rem;
+  }
+} */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 0.7rem;
+  }
+
+  body {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bbq-main,
+  .form-section {
+    width: 100vw;
+  }
+
+  .title-container {
+    padding: 0;
+  }
+
+  .title {
+    padding: 8rem 2rem 6rem;
+  }
+
+  .main-subtitle {
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+
+  .form-section {
+    margin-bottom: 2rem;
+  }
+
+  .filter {
+    padding: 0;
+  }
 }
