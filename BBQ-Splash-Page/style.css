@@ -20,13 +20,13 @@ body {
   border: 1px solid #989898;
 }
 
-.bbq-main {
+.bbq-section {
   position: relative;
   color: #fff;
   width: 60%;
 }
 
-.bbq-main::after {
+.bbq-section::after {
   content: "";
   background-image: url(images/bbq.jpg);
   background-position: center;
@@ -58,16 +58,12 @@ body {
 
 .form-section {
   width: 40%;
-}
-
-.form-container {
   padding: 0 1.8rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .register-form {
@@ -202,12 +198,6 @@ body {
   color: #989898;
 }
 
-/* @media (max-width: 800px) {
-  .form-info {
-    padding: 0 1.5rem;
-  }
-} */
-
 @media (max-width: 600px) {
   html {
     font-size: 0.7rem;
@@ -215,6 +205,7 @@ body {
 
   body {
     display: block;
+    width: 100vw;
   }
 
   .container {
@@ -223,9 +214,13 @@ body {
     border: none;
   }
 
-  .bbq-main,
+  .bbq-section,
   .form-section {
     width: 100vw;
+  }
+
+  .bbq-section {
+    margin-bottom: 2rem;
   }
 
   .title-container {
