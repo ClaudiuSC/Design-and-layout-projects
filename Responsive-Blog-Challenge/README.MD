@@ -4,4 +4,3 @@ Kevin Powell's Scrimba blog challenge:
 * three page blog
 
 
-TREBUIE ADAUGAT CSS-ul DE PE LAPTOP!!!
