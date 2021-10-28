@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", sans-serif;
+  margin: 0;
+}
+
+p {
+  color: #707070;
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+
+
+/* header */
+
+header {
+  background-color: #F8F8F8;
+  margin-bottom: 3rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 3rem 0 0 0;
+  color: #143774;
+}
+
+.subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: .75rem;
+  color: #1792D2;
+  text-transform: uppercase;
+  word-spacing: 4px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+@media (min-width: 730px) {
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .align-top {
+    align-items: flex-start;
+  }
+
+  .title-h1 {
+    padding: 0;
+  }
+}
+
+/* nav */
+nav ul {
+  padding: 3rem 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav li {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #717171;
+  list-style-type: none;
+}
+
+nav li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.current-page {
+  border-bottom: 2px solid #717171;
+}
+
+nav a {
+  text-decoration: none;
+  color: #717171;
+}
+
+@media (min-width: 730px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: #1792D2;
+  }
+
+  nav li:not(:last-child) {
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .current-page:hover,
+  .current-page:focus {
+    color: #707070;
+  }
+}
+
+
+/* articles */
+
+.article-featured {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 2rem;
+}
+
+.article-featured-image {
+  order: -2;
+  margin-bottom: 2rem;
+}
+
+.article-info {
+  order: -1;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  color: #707070;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.article-title {
+  color: #143774;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.article-content {
+  margin-bottom: 2rem;
+}
+
+.article-link {
+  color: #1792D2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .875rem;
+  margin-bottom: 2rem;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.article-recent .article-info {
+  margin: 1rem 0 .5rem;
+}
+
+.article-recent-secondary {
+  order: -1;
+}
+
+.article-recent-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 180px;
+}
+
+.img-mod-bottom {
+  object-position: bottom;
+}
+
+@media (min-width: 730px) {
+  main {
+    width: 70%;
+    margin-bottom: 4rem;
+  }
+
+  aside {
+    width: 25%;
+  }
+
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-main {
+    width: 65%;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  .article-recent-image {
+    height: 250px;
+  }
+
+  .img-mod-left {
+    object-position: left;
+  }
+
+  .article-featured-image {
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+    object-position: bottom;
+  }
+
+  .article-featured-image.img-mod-center {
+    object-position: center;
+  }
+}
+
+
+/*  widget */
+
+.sidebar-widget {
+  border: 20px solid #EBEBEB;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.widget-recent-post:not(:last-child) {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1rem;
+}
+
+.widget-title {
+  color: #143774;
+  letter-spacing: 3.6px;
+  font-family: "Ubuntu" , sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.widget-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+}
+
+.widget-body {
+  margin: 1rem 0 0;
+  font-size: .875rem;
+}
+
+.widget-recent-post-title {
+  color: #143774;
+  margin: 1rem 0;
+  font-size: 1.125rem;
+}
+
+/* footer */
+ 
+footer {
+  background-color: #143774;
+  padding: 2rem;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+/*  about me page */
+
+.aboutme-title {
+  font-size: 1.3125rem;
+  color:#1792D2;
+  margin-bottom: 1rem;
+}
