@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  display: flex;
+  /* height: 100vh; */
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: beige;
+}
+
+.book-collection {
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 1rem 8rem;
+  grid-template-rows: repeat(2, 5rem) 1rem;
+  grid-template-areas: 
+        "spine title"
+        "spine author"
+        "footer footer";
+  margin: 1rem;
+}
+
+.book * {
+  border: 1px solid black;
+}
+
+.spine {
+  grid-area: spine;
+  border-top-left-radius: .5rem;
+  background-color: darkslategray;
+  border-bottom-width: 2px; 
+}
+
+.footer {
+  grid-area: footer;
+  border-bottom-left-radius: .5rem;
+  background-color: lightgoldenrodyellow;
+  border-left-width: 3px; 
+  border-bottom-width: 2px; 
+}
+
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: none;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+}
+
+.author {
+  text-align: center;
+  font-size: .8rem;
+  border-top: none;
+  background-color: cadetblue;
+  border-bottom-width: 3px; 
+}
+
+.title a {
+  text-decoration: none;
+  border: none;
+  color: black;
+  transition: color ease-in-out .2s;
+  align-self: flex-end;
+}
+
+.title a:hover {
+  color:indigo;
+}
+
+.book:nth-of-type(odd) .title, 
+.book:nth-of-type(odd) .author {
+  background: lightgreen;
+}
